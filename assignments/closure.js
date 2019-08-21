@@ -17,26 +17,47 @@ console.log(myfunction(5,5,anyvariable));
 
 
 // ==== Challenge 2: Implement a "counter maker" function ====
-const counterMaker = () => {
+// const counterMaker = () => {
 
-let count = 0;
-let counter = () => {
-  count = count + 1;
-  return count;
-}
-return counter;
-};
+// let count = 0;
+// let counter = () => {
+//   count = count + 1;
+//   return count;
+// }
+// return counter;
+// };
 
-const myCounter = counterMaker();
+// const myCounter = counterMaker();
 
-console.log(myCounter());
-console.log(myCounter());
-console.log(myCounter());
-console.log(myCounter());
+// console.log(myCounter());
+// console.log(myCounter());
+// console.log(myCounter());
+// console.log(myCounter());
 
 // ==== Challenge 3: Make `counterMaker` more sophisticated ====
 // It should have a `limit` parameter. Any counters we make with `counterMaker`
 // will refuse to go over the limit, and start back at 1.
+const counterMaker = () => {
+
+  limit = 4;
+
+  let count = 0;
+  let counter = () => {
+    count = count + 1;
+    if(count < limit)
+    return count;
+    if (count > limit);
+    return count = 1
+  }
+  return counter;
+  };
+  
+  const myCounter2 = counterMaker();
+
+  console.log(myCounter2());
+  console.log(myCounter2());
+  console.log(myCounter2());
+  console.log(myCounter2());
 
 // ==== Challenge 4: Create a counter function with an object that can increment and decrement ====
 const counterFactory = () => {

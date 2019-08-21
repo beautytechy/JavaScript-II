@@ -4,6 +4,14 @@
 // that manipulates variables defined in the outer scope.
 // The outer scope can be a parent function, or the top level of the script.
 
+const anyvariable = 3;
+
+const myfunction = (param1, param2) => {
+ return anyvariable;
+}
+
+console.log(myfunction(5,5,anyvariable));
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 

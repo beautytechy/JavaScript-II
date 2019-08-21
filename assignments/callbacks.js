@@ -86,9 +86,9 @@ function contains(items, list, cb) {
   // Pass true to the callback if it is, otherwise pass false.
 }
 listcheck = function (items, list) {
-  list.includes(items);
+  return list.includes(items);
 }
-console.log(contains(gum,items,listcheck));
+console.log(contains("Gum",items,listcheck));
 
 /* STRETCH PROBLEM */
 
